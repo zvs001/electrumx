@@ -1217,3 +1217,19 @@ class Chips(Coin):
     REORG_LIMIT = 800
 
 
+class Bluecoin(Coin):
+    NAME = "Bluecoin"
+    SHORTNAME = "BLU"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("1a")
+    P2SH_VERBYTES = [bytes.fromhex("05")]
+    GENESIS_HASH = ('dff2c9d2f60f1b9cd955b64639000159'
+                    'b444f2df71a66bf455cee071653f8de2')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 154333
+    TX_COUNT_HEIGHT = 139707
+    TX_PER_BLOCK = 5
+    RPC_PORT = 27105
+    REORG_LIMIT = 800
