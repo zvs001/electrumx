@@ -1230,9 +1230,6 @@ class Bluecoin(Coin):
                     'b444f2df71a66bf455cee071653f8de2')
     DESERIALIZER = lib_tx.DeserializerSegWit
     RPC_PORT = 27105
-    ESTIMATE_FEE = 0.001
-    RELAY_FEE = 0.001
-    DAEMON = daemon.FakeEstimateFeeDaemon
     TX_COUNT = 1000
     TX_COUNT_HEIGHT = 10000
     TX_PER_BLOCK = 1
